@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <form action="result.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <label for="name">Name</label>
+            <!-- Default value of username -->
+            <input type="text" placeholder="Enter Name..." id="name" name="name" required value="username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" required id="password" name="password">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <!-- Provide email validation and opens a keyboard for email in mobile -->
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="0" max="150" step="1">
+        </div>
+        <div>
+            <label for="birthdate">Birthdate</label>
+            <input type="date" id="birthdate" name="birthdate" value="2003-01-21" min="2000-01-10" max="2050-01-01">
+        </div>
+        <div>
+            Favorite Fruit
+            <label for="mango">Mango</label>
+            <input type="checkbox" id="mango" name="mango" value="mango">
+            <label for="banana">Banana</label>
+            <input type="checkbox" id="banana" name="banana" value="banana">
+        </div>
+        <div>
+            Gender
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+        </div>
+        <div>
+            <label for="eyeColor">Eye Color</label>
+            <select name="eyeColor" id="eyeColor" multiple>
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+            </select>
+        </div>
+        <div>
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio">  Value goes here and spacing is considered jflkj    </textarea>
+        </div>
+        <div>
+            <label for="file">File</label>
+            <input type="file" id="file" name="file">
+        </div>
+        <div>
+            <input type="hidden"  name="hidden" value="secret">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <!-- Validates phone number and opens special keyboard for entering phone number in mobile -->
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div>
+            <label for="url">Url</label>
+            <!-- opens special keyboard for entering url in mobile -->
+            <input type="url" id="url" name="url">
+        </div>
+        <!-- Submits the form when enter is pressed or when submit btn is clicked -->
+        <button type="submit">Submit</button>
+        <!-- Resets to default form state -->
+        <button type="reset">Reset</button>
+       
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <div class="result"></div>
+    <a href="/">Back to form</a>
+    <script>
+        const result = document.querySelector(".result");
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        
+        urlSearchParams.forEach((value,name)=>{
+            result.append(`${name} : ${value}`);
+            result.append(document.createElement("br"));
+        })
+    </script>
+</body>
+</html>
